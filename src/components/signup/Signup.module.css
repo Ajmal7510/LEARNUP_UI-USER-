@@ -1,0 +1,183 @@
+.signupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
+.signupForm {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding-left: 20px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup input {
+  
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.passwordStrength {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.passwordStrength.weak {
+  color: red;
+}
+
+.passwordStrength.medium {
+  color: orange;
+}
+
+.passwordStrength.strong {
+  color: green;
+}
+
+.submitBtn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.googleAuth {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.googleBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.googleBtn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.loginLink {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.loginLink a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+
+.passwordWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.passwordWrapper input {
+  flex: 1;
+  padding-right: 40px; /* Give space for the button */
+}
+
+.togglePassword {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #555;
+  padding: 5px;
+}
+
+.togglePassword:focus {
+  outline: none;
+}
+
+.passwordStrength {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+.weak {
+  color: red;
+}
+
+.medium {
+  color: orange;
+}
+
+.strong {
+  color: green;
+}
+
+.serverError {
+  color: #d9534f; /* Red color to indicate an error */
+  background-color: #f8d7da; /* Light red background */
+  border: 1px solid #f5c6cb; /* Slightly darker border */
+  padding: 10px; /* Padding for better spacing */
+  margin-bottom: 15px; /* Space below the error message */
+  border-radius: 5px; /* Rounded corners for a better look */
+  font-size: 14px; /* Slightly smaller font */
+  text-align: center; /* Center-align the text */
+}
+
+.submitBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

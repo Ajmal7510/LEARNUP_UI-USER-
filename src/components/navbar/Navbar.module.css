@@ -1,0 +1,179 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d2d2d;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Allow the navbar items to wrap on smaller screens */
+}
+
+.navbarLeft {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #00bcd4;
+}
+
+.logoImg {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.navbarMiddle {
+  display: flex;
+  align-items: center;
+  flex: 2;
+  justify-content: center;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+.navLinks li {
+  margin: 0 15px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navLinks li:hover {
+  color: #00bcd4;
+}
+
+.searchBar {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  background-color: #444;
+  color: white;
+}
+
+.searchBar::placeholder {
+  color: #aaa;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  margin-right: 10px;
+  font-weight: 600;
+}
+
+.profileIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.loginButton,
+.signupButton {
+  padding: 8px 16px;
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover,
+.signupButton:hover {
+  background-color: #0097a7;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbarLeft,
+  .navbarMiddle,
+  .navbarRight {
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .navLinks {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navLinks li {
+    margin: 10px 0;
+  }
+
+  .searchBar {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .authButtons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+
+  .logoImg {
+    width: 25px;
+  }
+
+  .profileIcon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .loginButton,
+  .signupButton {
+    padding: 6px 12px;
+  }
+}
